@@ -1094,25 +1094,74 @@ body {
     background: var(--hover-color);
 }
 
+/* Success Message */
 .success-message {
     display: none;
-    text-align: center;
+    flex-direction: column;
+    /* Stack content vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
     padding: 2rem;
     background: var(--light-color);
     border-radius: 10px;
     box-shadow: 0 5px 15px var(--shadow-color);
     margin-top: 2rem;
+    height: auto;
+    animation: fadeIn 0.5s ease;
+    /* Add a fade-in animation */
 }
 
 .success-message i {
     font-size: 3rem;
     color: #4caf50;
-    margin-bottom: 0.8rem;
+    /* Green color for the checkmark */
+    margin-bottom: 1rem;
+    /* Space between the checkmark and the message */
+    animation: anime 0.5s ease;
+    /* Add a bounce animation */
 }
 
 .success-message p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text-color);
+    margin: 0;
+    /* Remove default margin */
+    text-align: center;
+    /* Center the text */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce Animation */
+@keyframes anime {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 480px){
+    width: 100%;
 }
 
 .contact-info {
