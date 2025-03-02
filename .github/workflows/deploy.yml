@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Change if your default branch is different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy to Public Repository
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git clone --depth 1 https://your-github-username:${GH_PAT}@github.com/your-github-username/your-github-username.github.io.git public-repo
+          rsync -av --progress --delete ./ public-repo/ --exclude .git --exclude .github
+          cd public-repo
+          git add .
+          git commit -m "Auto-deploy from private repo"
+          git push
