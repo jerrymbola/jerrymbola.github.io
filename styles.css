@@ -1390,7 +1390,8 @@ body {
 }
 
 .footer-column {
-    flex: 1 1 25%;
+    flex: 1 1 100%;
+    /* Default to 1 column for small screens */
     min-width: 200px;
     margin-bottom: 2rem;
 }
@@ -1483,17 +1484,21 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (min-width: 600px) {
     .footer-column {
-        flex: 1 1 50%;
+        flex: 1 1 calc(50% - 2rem);
+        /* 2 columns for tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-column {
+        flex: 1 1 calc(25% - 2rem);
+        /* 4 columns for laptops and wider screens */
     }
 }
 
 @media (max-width: 768px) {
-    .footer-column {
-        flex: 1 1 100%;
-    }
-
     .footer-title {
         font-size: 1.3rem;
     }
