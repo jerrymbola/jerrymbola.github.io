@@ -1213,7 +1213,7 @@ body {
 .contact-info .social-links {
     display: flex;
     gap: 1.5rem;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .contact-info .social-links a {
