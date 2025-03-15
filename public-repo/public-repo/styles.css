@@ -39,30 +39,12 @@ body {
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Logo Container */
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 40px;
-    /* Adjust the height of the logo as needed */
-    width: auto;
-    /* Maintain aspect ratio */
 }
 
 .nav-links {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .nav-links li {
@@ -147,12 +129,6 @@ body {
     .nav-links li {
         margin: 1rem 0;
         text-align: center;
-    }
-
-    /* Adjust logo size for smaller screens */
-    .logo {
-        height: 40px;
-        /* Smaller logo for mobile */
     }
 }
 
