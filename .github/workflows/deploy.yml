@@ -3,7 +3,7 @@ name: Deploy Portfolio to GitHub Pages
 on:
   push:
     branches:
-      - main  # Triggers deployment when you push to main
+      - main  # Runs when pushing to main
 
 jobs:
   deploy:
@@ -16,28 +16,11 @@ jobs:
           repository: jerrymbola/jm-portfolio-source
           token: ${{ secrets.GH_PAT }}
 
-      - name: Setup Node.js (Optional)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Dependencies (If applicable)
-        run: |
-          npm install  # If using a build step like React/Vite
-
-      - name: Build Project (Modify as Needed)
-        run: |
-          npm run build  # Change this if needed
-          cp -r dist/* ../public-repo  # Adjust if output folder is different
-
       - name: Push to Public Repo
         run: |
+          git clone https://github.com/jerrymbola/jerrymbola.github.io.git ../public-repo
+          rsync -av --delete . ../public-repo
           cd ../public-repo
-          git init
-          git remote add origin https://github.com/jerrymbola/jerrymbola.github.io.git
-          git checkout -b main
           git add .
-          git commit -m "Deploy updated portfolio"
-          git push --force origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          git commit -m "Deploy updated portfolio" || echo "No changes to commit"
+          git push origin main
