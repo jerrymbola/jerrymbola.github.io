@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry Mbola | Front-End Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">jm</a>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars" aria-hidden="true"></i> <!-- Hamburger icon -->
+                <i class="fas fa-times" aria-hidden="true" style="display: none;"></i> <!-- Close icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Jerry Mbola</span></h1>
+                    <p class="hero-subtitle">Front-End Developer creating beautiful web experiences</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="cta-btn">View My Work</a>
+                        <a href="#contact" class="cta-btn outline">Contact Me</a>
+                    </div>
+                    <div class="social-section">
+                        <p class="connect-text">Let's Connect</p>
+                        <div class="social-links">
+                            <a href="https://github.com/jerrymbola" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jerry-mbola/" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://discord.com/users/582865182930370560" target="_blank" title="Discord">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-picture">
+                    <img src="./img/profile1-removebg-preview.png" alt="Jerry Mbola">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <!-- About Text -->
+                <div class="about-text">
+                    <p>
+                        Hi, I'm Jerry Mbola, a passionate Front-End Developer with a love for creating beautiful and
+                        functional web experiences. I specialize in turning ideas into reality using modern technologies
+                        like HTML, CSS, and JavaScript.
+                    </p>
+                    <p>
+                        With a strong eye for design and a focus on user experience, I strive to build websites that are
+                        not only visually appealing but also intuitive and easy to use. Whether it's a simple landing
+                        page
+                        or a complex web application, I enjoy the challenge of bringing ideas to life.
+                    </p>
+                    <p>
+                        When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects,
+                        and
+                        continuously improving my skills to stay ahead in the ever-evolving tech landscape.
+                    </p>
+                    <!-- Call-to-Action Button -->
+                    <div class="about-cta">
+                        <a href="#contact" class="cta-btn">Let's Work Together</a>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="about-skills">
+                    <h3>My Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fas fa-code"></i> Tailwind CSS</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript</li>
+                        <li><i class="fab fa-git"></i> Git</li>
+                        <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Ecoloop Solutions Africa -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/ecoloopv2.png" alt="Ecoloop Solutions Africa">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ecoloop Solutions Africa</h3>
+                        <p class="project-description">
+                            A sustainable waste management platform designed to educate and empower communities in
+                            Africa
+                            with tools for proper waste disposal, recycling guides, and eco-friendly practices.
+                        </p>
+                        <div class="project-button">
+                            <a href="https://www.myecoloop.com/" target="_blank" class="cta-btn">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Nanas Kids Furniture -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/nanaskidsv2.png" alt="Nanas Kids Furniture">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Nanas Kids Furniture</h3>
+                        <p class="project-description">
+                            A visually appealing platform showcasing customizable kids' furniture, featuring a modern
+                            and
+                            intuitive design to highlight product offerings and inspire creativity.
+                        </p>
+                        <div class="project-button">
+                            <a href="https://nanaskidsfurniture.site/" target="_blank" class="cta-btn">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- HTML5 -->
+                <div class="skill-item" data-skill="html">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 95%;"></div>
+                    </div>
+                    <p class="skill-description">Proficient in semantic markup and accessibility.</p>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="skill-item" data-skill="css">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <p class="skill-description">Experienced in responsive design and animations.</p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-item" data-skill="js">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <p class="skill-description">Skilled in modern ES6+ features and frameworks.</p>
+                </div>
+
+                <!-- Git -->
+                <div class="skill-item" data-skill="git">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                    <p class="skill-description">Proficient in version control and collaboration workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind or just want to say hello? Feel free to reach out!</p>
+
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/mnnjeqgl" method="POST">
+                    <!-- Name Field -->
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <span class="error-message" id="name-error"></span>
+                        <i class="fas fa-check-circle checkmark"></i> <!-- Checkmark -->
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <span class="error-message" id="email-error"></span>
+                        <i class="fas fa-check-circle checkmark"></i>
+                    </div>
+
+                    <!-- Phone Field -->
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        <span class="error-message" id="phone-error"></span>
+                        <i class="fas fa-check-circle checkmark"></i>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="contact-cta-btn">Send Message</button>
+                </form>
+
+                <!-- Success Message -->
+                <div class="success-message" id="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Your message has been sent successfully!</p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>If you prefer to reach out directly, here's how you can contact me:</p>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:jerrymbola@zohomail.com">jerrymbola@zohomail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nairobi, Kenya</span>
+                        </li>
+                    </ul>
+
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="https://github.com/jerrymbola" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jerry-mbola/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://discord.com/users/582865182930370560" target="_blank"><i
+                                class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Quick Links Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:jerrymbola@zohomail.com">
+                            jerrymbola@zohomail.com</a>
+                    </li>
+                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                </ul>
+            </div>
+
+            <!-- Follow Me Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">Follow Me</h3>
+                <div class="footer-social-links">
+                    <a href="https://github.com/jerrymbola" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jerry-mbola/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://discord.com/users/582865182930370560" target="_blank" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div class="footer-column">
+                <h3 class="footer-title">Subscribe to My Newsletter</h3>
+                <form id="newsletter-form" class="footer-newsletter" action="https://formspree.io/f/mwplovbv"
+                    method="POST">
+                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+                    <span class="error-message" id="newsletter-error"></span>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div id="newsletter-success" class="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Thank you for subscribing!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p id="copyright" class="copyright">
+                &copy; <span id="copyright-year"></span>
+                <a href="https://github.com/jerrymbola" target="_blank" class="copyright-link">Jerry Mbola</a>. All
+                rights
+                reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
